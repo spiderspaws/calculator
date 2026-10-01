@@ -1,0 +1,10 @@
+window = tkinter.Tk()
+window.title = "Calculator""
+window.resizeable(False, False )
+
+frame = tkinter.frame(window)
+label = tkinter.Label(frame,  text = "0", font = "Poppins", "25", backround=color_black
+                             foreground=color_white
+                      )
+
+window.mailoop()
