@@ -1,6 +1,8 @@
+import tkinter
+
 window = tkinter.Tk()
-window.title = "Calculator""
-window.resizeable(False, False )
+window.title = "Calculator"
+window.resizable(False, False)
 
 button_values = [
     ["AC", "+/-", "%", "÷"], 
@@ -14,8 +16,13 @@ right_symbols = ["÷", "×", "-", "+", "="]
 top_symbols = ["AC", "+/-", "%"]
 
 frame = tkinter.frame(window)
-label = tkinter.Label(frame,  text = "0", font = "Poppins", "25", backround=color_black
+label = tkinter.Label(frame,  text = "0", font = "Poppins", "25", backround=color_darkish_pink
                              foreground=color_white
                       )
+color_darkish_pink = "#472836"
+color_white = "#FFFFFF"
+color_light_pink = "#F2D5D5"
+color_light_purple = "#BFA2DB"
+color_dark_purple = "#4A2C4C"
 
 window.mailoop()
