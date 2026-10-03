@@ -2,6 +2,17 @@ window = tkinter.Tk()
 window.title = "Calculator""
 window.resizeable(False, False )
 
+button_values = [
+    ["AC", "+/-", "%", "÷"], 
+    ["7", "8", "9", "×"], 
+    ["4", "5", "6", "-"],
+    ["1", "2", "3", "+"],
+    ["0", ".", "√", "="]
+]
+
+right_symbols = ["÷", "×", "-", "+", "="]
+top_symbols = ["AC", "+/-", "%"]
+
 frame = tkinter.frame(window)
 label = tkinter.Label(frame,  text = "0", font = "Poppins", "25", backround=color_black
                              foreground=color_white
