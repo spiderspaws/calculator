@@ -1,5 +1,11 @@
 import tkinter
 
+color_darkish_pink = "#472836"
+color_white = "#FFFFFF"
+color_light_pink = "#F2D5D5"
+color_light_purple = "#BFA2DB"
+color_dark_purple = "#4A2C4C"
+
 window = tkinter.Tk()
 window.title = "Calculator"
 window.resizable(False, False)
@@ -19,10 +25,14 @@ frame = tkinter.frame(window)
 label = tkinter.Label(frame,  text = "0", font = "Poppins", "25", backround=color_darkish_pink
                              foreground=color_white
                       )
-color_darkish_pink = "#472836"
-color_white = "#FFFFFF"
-color_light_pink = "#F2D5D5"
-color_light_purple = "#BFA2DB"
-color_dark_purple = "#4A2C4C"
 
 window.mailoop()
+
+label.grid(row=0, column=0,)
+
+for row in range(5):
+    for column in range(4):
+        value = button_values[row][column] 
+        button = tkinter.Button(frame, text=value, font="Poppins", "20", background=color_light_pink, foreground=color_dark_purple)
+        
+frame.pack(fill="both", expand=True)
