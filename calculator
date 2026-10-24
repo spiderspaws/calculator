@@ -32,8 +32,12 @@ for row in range(5):
     for column in range(4):
         value = button_values[row][column] 
         button = tkinter.Button(frame, text=value, font="Poppins 20", background=color_light_pink, foreground=color_dark_purple)
-                     width=column-1, height=2, command=lambda v=value: button_click(v))
+                     width=column-1, height=2,      command=lambda v=value: button_click(v))
+button.grid(row=row+, column=column)
         
 frame.pack(fill="both", expand=True)
+
+def button_clicked(value):
+    pass
 
 window.mainloop()
